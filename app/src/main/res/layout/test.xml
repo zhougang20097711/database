@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/massage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="500dp"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/btn1"
+        style="@style/btn"
+        android:text="插入100条"
+        android:gravity="center"
+    />
+    <TextView
+        android:id="@+id/btn2"
+        style="@style/btn"
+        android:text="更新100条"
+        android:gravity="center"
+    />
+    <TextView
+        android:id="@+id/btn3"
+        style="@style/btn"
+        android:text="复杂操作"
+        android:gravity="center"
+    />
+</LinearLayout>

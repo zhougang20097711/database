@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+>
+
+    <TextView
+        android:id="@+id/massage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="300dp"
+        android:text=""/>
+    
+    <RadioGroup
+        android:id="@+id/radiogruop"
+        android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/sync"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="单线程"/>
+
+        <RadioButton
+            android:id="@+id/async"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="多线程"/>
+
+    </RadioGroup>
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content" android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/insert01"
+                style="@style/btn"
+                android:text="insert(obj)"
+            />
+            <TextView
+                android:id="@+id/insert02"
+                style="@style/btn"
+                android:text="insert(objs)"
+            />
+            <TextView
+                android:id="@+id/insert03"
+                style="@style/btn"
+                android:text="insertInTransaction(objs)"
+                android:visibility="gone"
+            />
+            <TextView
+                android:id="@+id/delete01"
+                style="@style/btn"
+                android:text="delete(obj)"
+                android:visibility="gone"
+            />
+            <TextView
+                android:id="@+id/delete02"
+                style="@style/btn"
+                android:text="delete(objs)"
+            />
+            <TextView
+                android:id="@+id/delete03"
+                style="@style/btn"
+                android:text="deleteInTransaction(objs)"
+                android:visibility="gone"
+            />
+            <TextView
+                android:id="@+id/delete04"
+                style="@style/btn"
+                android:text="deleteById(obj)"
+                android:visibility="gone"
+            />
+            <TextView
+                android:id="@+id/delete05"
+                style="@style/btn"
+                android:text="deleteInTransactionById(objs)"
+                android:visibility="gone"
+            />
+            <TextView
+                android:id="@+id/update01"
+                style="@style/btn"
+                android:text="update(obj)"
+                android:visibility="gone"
+            />
+            <TextView
+                android:id="@+id/update02"
+                style="@style/btn"
+                android:visibility="gone"
+                android:text="update(whereMap,columnName,columnValue)"
+            />
+            <TextView
+                android:id="@+id/update03"
+                style="@style/btn"
+                android:text="update(whereMap,updateValue)"
+            />
+            <TextView
+                android:id="@+id/update04"
+                style="@style/btn"
+                android:visibility="gone"
+                android:text="updateInTransaction(objs)"
+            />
+            <TextView
+                android:id="@+id/update05"
+                style="@style/btn"
+                android:visibility="gone"
+                android:text="createOrUpdate(obj)"
+            />
+            <TextView
+                android:id="@+id/update06"
+                style="@style/btn"
+                android:visibility="gone"
+                android:text="createOrUpdate(objs)"
+            />
+            <TextView
+                android:id="@+id/query01"
+                style="@style/btn"
+                android:text="queryById(id)"
+                android:visibility="gone"
+            />
+            <TextView
+                android:id="@+id/query02"
+                style="@style/btn"
+                android:text="queryAll()"
+            />
+            <TextView
+                android:id="@+id/query03"
+                style="@style/btn"
+                android:text="query(builder)"
+                android:visibility="gone"
+            />
+            <TextView
+                android:id="@+id/goTest"
+                style="@style/btn"
+                android:text="goTest"
+
+            />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
