@@ -38,7 +38,7 @@ public abstract class OrmDatabaseHelper<T> extends OrmLiteSqliteOpenHelper {
 		Log.i("db", "onCreate");
 		try {
 			DBtables.clear();
-			createTables(DBtables);
+			updateTables(DBtables);
 			for (Class table : DBtables) {
 				TableUtils.createTable(connectionSource, table);
 			}
@@ -90,16 +90,16 @@ public abstract class OrmDatabaseHelper<T> extends OrmLiteSqliteOpenHelper {
 		}
 	}
 
-	/**
-	 * 创建数据库时,表的集合
-	 * 初始的表
-	 *
-	 * @param tables
-	 */
-	public abstract void createTables(List<Class<T>> tables);
+//	/**
+//	 * 创建数据库时,表的集合
+//	 * 初始的表
+//	 *
+//	 * @param tables
+//	 */
+//	public abstract void createTables(List<Class<T>> tables);
 
 	/**
-	 * 数据库版本更新时，要更新的表的集合
+	 * 数据库创建和版本更新时，要更新的表的集合
 	 * 升级或降级版本，新增的表，有更新字段的表
 	 *
 	 * @param tables

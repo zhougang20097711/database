@@ -31,14 +31,10 @@ public class MyDbHelper extends OrmDatabaseHelper {
         }
         return dbHelper;
     }
-    @Override
-    public void createTables(List tables) {
-        tables.add(User.class);
-        tables.add(Product.class);
 
-    }
     @Override
     public void updateTables(List tables) {
+        //当前版本要用到的表
         tables.add(User.class);
         tables.add(Product.class);
         tables.add(Order.class);
